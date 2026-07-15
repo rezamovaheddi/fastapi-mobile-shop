@@ -7,7 +7,7 @@ from app.utils.security import hash_password, verify_password, create_accsess_to
 
 def register_user(user_data: UserCreate, db: Session):
     register = db.query(User).filter(
-        User.username == user_data.username | User.email == user_data.email
+        (User.username == user_data.username) | (User.email == user_data.email)
     ).first()
     if register:
         raise HTTPException(

@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 from sqlalchemy import text
 from app.database import engine, Base
+from app.routers.auth import router as auth_routers
+
 app = FastAPI(title='api shop mobile', version='1.0.0')
+
+app.include_router(auth_routers)
 
 
 @app.on_event('startup')
