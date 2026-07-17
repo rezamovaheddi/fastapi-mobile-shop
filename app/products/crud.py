@@ -21,7 +21,7 @@ def get_product_by_id(db: Session, product_id: int) -> Product:
     if not product:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Product not found",
+            detail="محصول یافت نشد",
         )
     return product
 
