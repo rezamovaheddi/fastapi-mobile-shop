@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📱 Mobile Shop API
 
 A modern RESTful API for an online mobile shop built with **FastAPI**. The project provides secure authentication, role-based authorization, and complete product management with a clean and scalable architecture.
@@ -274,3 +275,6 @@ This project is licensed under the MIT License.
 
 GitHub:
 https://github.com/rezamovaheddi
+=======
+
+>>>>>>> 8abd85dbc566f61e307bd6b557b514f31fc33dff
