@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+
+    container_name: postgres
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: reza
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: mobileshop
+
+    ports:
+      - "15432:5432"

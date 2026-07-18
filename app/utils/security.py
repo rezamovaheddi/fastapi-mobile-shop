@@ -1,7 +1,10 @@
+import os
 from datetime import datetime, timedelta, timezone
 from passlib.context import CryptContext
 from jose import JWTError, jwt
-from app.env import token
+from dotenv import load_dotenv
+load_dotenv()
+token = os.getenv('token')
 pwd_content = CryptContext(schemes=['bcrypt'], deprecated='auto')
 
 
