@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 class OTPService:
     @staticmethod
     def generate_code() -> str:
-        return str(random(random.randint(100000, 999999)))
+        return str(random.randint(100000, 999999))
 
     @staticmethod
     def expire_code(min: int = 5):
