@@ -30,4 +30,4 @@ class User(Base):
 
     is_verified = Column(Boolean, default=False)
     verification_code = Column(String(length=6), nullable=True)
-    erification_expire = Column(DateTime, nullable=True)
+    verification_expire = Column(DateTime, nullable=True)
