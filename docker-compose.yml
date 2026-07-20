@@ -1,4 +1,18 @@
 services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: mobile-shop-api
+
+    restart: always
+
+    env_file:
+      - .env
+
+    ports:
+      - "8000:8000"
   postgres:
     image: postgres:17
 
